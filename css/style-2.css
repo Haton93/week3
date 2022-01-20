@@ -1,0 +1,190 @@
+
+/** box content **/
+
+body {
+    font-size: 15px;
+    color: black;
+    background-color: whitesmoke;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/** our menu **/
+div.text {
+    color: black;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    font-weight:bold;
+
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: lightsteelblue;
+    border-radius: 0;
+    border: 0;
+    padding: 10px;
+}
+
+/** Navbar space **/
+.navbar-brand {
+    padding-top: 25px;
+}
+
+/* Restaurant name */
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: -10px;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+
+/* small Menu on the right */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -70px;
+}
+/* END HEADER */
+
+/* the box shape */
+#menu-tile {
+    width: 1200px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: lightgray;
+    border: 4px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/* the box titles  */
+#menu-tile span {
+    position: relative;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color:black;
+    opacity: .8;
+    font-weight:bold;
+    text-align: center;
+}
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .container .box {
+        height: 500px;
+        text-align: center;
+
+
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container .box {
+        height: 400px;
+        text-align: center;
+
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page */
+    .container .box {
+        height: 300px;
+        text-align: center;
+    }
+    /* End Home Page */
+}
+
+
+/********** Extra small screen **********/
+@media (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 { /* Restaurant name */
+        padding-top: 10px;
+        font-size: 5vw; /* 1vw = 1% of viewport width */
+    }
+
+    /* for the menu when it show on the page (beef-sushi..)  */
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: lightgray;
+        color: black;
+    }
+
+
+    /* small box size */
+    #menu-tile {
+        width: 450px;
+        margin: 0 auto 15px;
+    }
+    .menu-item-description {
+        text-align: center;
+        font-size:15px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
+    /* Header */
+    .navbar-brand h1 { /* Restaurant name */
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    /* End Header */
+
+    /* Home page */
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+
+    }
+}
+
+
+
+
